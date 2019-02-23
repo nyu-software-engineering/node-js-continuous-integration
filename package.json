@@ -1,0 +1,31 @@
+{
+  "name": "node-test",
+  "version": "0.0.1",
+  "description": "An exploration of unit testing Javascript using the Mocha unit testing framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bloombar/node-js-travis-continuous-integration.git"
+  },
+  "keywords": [
+    "node.js",
+    "travis",
+    "continuous",
+    "integration",
+    "unit",
+    "testing",
+    "mocha"
+  ],
+  "author": "Foo Barstein",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/bloombar/node-js-travis-continuous-integration/issues"
+  },
+  "homepage": "https://github.com/bloombar/node-js-travis-continuous-integration#readme",
+  "devDependencies": {
+    "mocha": "^6.0.0"
+  }
+}
