@@ -1,23 +1,25 @@
 {
-  "name": "node-test",
+  "name": "es6-node-npm-mocha-babel-examples",
   "version": "0.0.1",
-  "description": "An exploration of unit testing Javascript using the Mocha unit testing framework",
+  "description": "An exploration of writing ES6 Javascript using the npm package manager, node.js engine, and the mocha unit testing framework",
   "main": "src/index.js",
   "scripts": {
     "start": "nodemon --exec babel-node src/index.js",
-    "test": "mocha"
+    "start-example-1": "nodemon --exec babel-node src/importing_exporting_example/index.js",
+    "start-example-2": "nodemon --exec babel-node src/objects_classes_example/index.js",
+    "start-example-3": "nodemon --exec babel-node src/functions_example/index.js",
+    "start-example-4": "nodemon --exec babel-node src/promises_example/index.js",
+    "test": "mocha --require @babel/register",
+    "test-with-coverage": "nyc --reporter=text mocha --require @babel/register"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bloombar/node-js-travis-continuous-integration.git"
   },
   "keywords": [
-    "node.js",
     "travis",
-    "continuous",
-    "integration",
-    "unit",
-    "testing",
+    "continuous integration",
+    "unit testing",
     "mocha"
   ],
   "author": "Foo Barstein",
@@ -31,6 +33,7 @@
     "@babel/node": "^7.2.2",
     "@babel/preset-env": "^7.3.4",
     "mocha": "^6.0.0",
-    "nodemon": "^1.18.10"
+    "nodemon": "^1.18.10",
+    "nyc": "^13.3.0"
   }
 }
