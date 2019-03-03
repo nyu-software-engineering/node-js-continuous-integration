@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/bloombar/node-js-travis-continuous-integration.svg?branch=master)](https://travis-ci.com/bloombar/node-js-travis-continuous-integration)
+
 Setting up continuous deployment using:
 - Git - for version control
 - Node.js - for application code
