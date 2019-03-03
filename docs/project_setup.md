@@ -12,12 +12,17 @@ Application source code files were then written and placed in this directory.
 ## Install code linter
 Install the ESLint code linter for Javascript globally, and include it as a development dependency listed in the package.json configuration file.
 ```bash
-npm install eslint -g --save-dev
+npm install eslint --save-dev
 ```
 
 Initialize the code linter... this will auto-create an ESLint settings file called `.eslintrc.json`.  Running this init command will ask several questions about what kind of checks you want the linter to do.  I've selected it to enforce syntax and style, to worry only about Node code, to use the "standard" lint style guide, and to keep the configuration file in json format.
 ```bash
-eslint --init
+./node_modules/.bin/eslint --init
+```
+
+To lint any code, you can either set up your IDE to auto-run ESLint, or manually run the linter on a file, such as
+```
+./node_modules/.bin/eslint src/index.js
 ```
 
 ## Install mocha unit testing framework
