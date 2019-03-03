@@ -23,7 +23,7 @@ Should you desire to build this application on your own machine.  Do the followi
 1. Enjoy!
 
 ## Understanding how to set up an npm / node app
-Should you desire to understand how to set up this application from scratch using npm's dependency management capabilities
+Should you desire to understand how to set up the application code in this project from scratch using npm's configuration and dependency management capabilities:
 - [Read the project setup instructions](docs/project_setup.md)
 
 ## Set up Digital Ocean Ubuntu Droplet to run Node.js applications
@@ -45,13 +45,19 @@ sudo ufw allow 'NGINX HTTPS
 ```
 
 Turn on the firewall... turning it off is `disable` as you'd expect
-```sudo ufw enable```
+```
+sudo ufw enable
+```
 
 list the status of firewall
-```sudo ufw status```
+```
+sudo ufw status
+```
 
 List all apps the firewall knows about
-```sudo ufw app list```
+```
+sudo ufw app list
+```
 
 ## NODE
 The following instructions are compiled from:
@@ -60,19 +66,29 @@ The following instructions are compiled from:
 General purpose Javascript programming environment for server and client-side applications.
 
 Install nodejs and npm using the APT package manager.  First, get latest package list
- ```sudo apt-get update```
+ ```
+ sudo apt-get update
+ ```
 
  Install nodejs
-```sudo apt-get install nodejs```
+```
+sudo apt-get install nodejs
+```
 
 Install npm
-```sudo apt-get install npm```
+```
+sudo apt-get install npm
+```
 
 Check the version of npm
-```npm -v```
+```
+npm -v
+```
 
 Check the version of node:
-```node -v```
+```
+node -v
+```
 
 ## NGINX
 The following instructions are compiled from:
@@ -81,19 +97,29 @@ The following instructions are compiled from:
 Web server and reverse proxy.
 
 Install nginx using the APT package manager.  First, get the latest package list:
-```sudo apt update```
+```
+sudo apt update
+```
 
 Then install nginx
-```sudo apt install nginx```
+```
+sudo apt install nginx
+```
 
 Check whether nginx is running
-```systemctl status nginx```
+```
+systemctl status nginx
+```
 
 It should be started by default, but if it's not, do the following... to stop or restart, replace `start` with `stop` or `restart`, respectively
-```sudo systemctl start nginx```
+```
+sudo systemctl start nginx
+```
 
 Find the IP address of the local machine
-```ip addr show eth0 | grep inet | awk '{ print $2; }' | sed 's/\/.*$//'```
+```
+ip addr show eth0 | grep inet | awk '{ print $2; }' | sed 's/\/.*$//'
+```
 
 Try connecting to the nginx server from a web browser using the http protocol and the IP adress resulting from the above command.
 
@@ -104,10 +130,14 @@ The following instructions are taken, in part, from:
 - https://hackernoon.com/continuous-deployment-for-node-js-on-digitalocean-d800e8520ffe
 
 This account will be used for deployment, and will not have admin privileges
-```sudo adduser deploy```
+```
+sudo adduser deploy
+```
 
 give some root-level access to this account
-```usermod -aG sudo deploy```
+```
+usermod -aG sudo deploy
+```
 
 ## Set up SSH key from Droplet to GitHub
 Following instructions here:
@@ -150,7 +180,9 @@ http.createServer(function (req, res) {
 ```
 
 Allow traffic on this port
-```sudo ufw allow 8080/tcp```
+```
+sudo ufw allow 8080/tcp
+```
 
 Test it out
 ```
@@ -164,7 +196,9 @@ Check out the GitHub repo's settings for this webhook
 Now make your node webhook app always run as a background process.
 
 Add a system service:
-```sudo emacs /etc/systemd/system/webhook.service```
+```
+sudo emacs /etc/systemd/system/webhook.service
+```
 
 Enter this into that webhook.service file:
 ```
@@ -184,13 +218,19 @@ WantedBy=multi-user.target
 ```
 
 Enable the new service so it starts when the system boots:
-```sudo systemctl enable webhook.service```
+```
+sudo systemctl enable webhook.service
+```
 
 Now start the service:
-```sudo systemctl start webhook```
+```
+sudo systemctl start webhook
+```
 
 Ensure the service is started:
-```sudo systemctl status webhook```
+```
+sudo systemctl status webhook
+```
 
 Note that this does not yet deploy the code, but has rather delivered it....  deployment is a small extra step to restart the deployed node app from the webhook script, using `npm restart` or some such thing.
 
