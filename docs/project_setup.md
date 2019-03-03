@@ -9,6 +9,10 @@ mkdir src
 ```
 Application source code files were then written and placed in this directory.
 
+## Install code linter
+Install the ESLint code linter for Javascript into the project and include it as a development dependency listed in the package.json configuration file.
+```npm install eslint --save-dev```
+
 ## Install mocha unit testing framework
 Install the mocha unit testing framework as a development dependency, and make a directory where test files will be saved.
 ```bash
