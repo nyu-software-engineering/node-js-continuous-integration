@@ -1,11 +1,3 @@
-## Building the application from source code
-Should you desire to build this application on your own machine.  Do the following:
-1. Clone the source code to your local machine using git
-1. Navigate to the directory where the source code now resides
-1. Type `npm install` to install all dependencies outlined in the package.json file
-1. Run the application with `npm start`, test it with `npm test`, and see code coverage analysis with `npm run test-with-coverage`.  
-1. Enjoy!
-
 ## How this application was created
 The following is an outline of the commands that were run to set up this project using the npm / node.js environment.  These commands were used to generate the package.json configuration file with the proper settings, as well as to install dependencies for unit testing and process monitoring, and to create directories where application and testing code will live.
 

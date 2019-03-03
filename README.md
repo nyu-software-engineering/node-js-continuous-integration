@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.com/bloombar/node-js-travis-continuous-integration.svg?branch=master)](https://travis-ci.com/bloombar/node-js-travis-continuous-integration)
 
-##Introduction
+## Introduction
 This project is set up to demonstrate the concepts of unit testing, continuous integration, continuous delivery, and continuous deployment. Furthermore, the application itself demonstrates the syntax and settings of Javascript, in particular, one written using Node.js and ES6 Javascript syntax.
 
 The following tools are used:
@@ -13,13 +13,21 @@ The following tools are used:
 - GitHub webhooks - for for continuous delivery/deployment
 - Digital Ocean Droplet - deployment target hosting provider
 
+## Building the application from source code
+Should you desire to build this application on your own machine.  Do the following:
+1. Clone the source code to your local machine using git
+1. Navigate to the directory where the source code now resides
+1. Type `npm install` to install all dependencies outlined in the package.json file
+1. Run the application with `npm start`, test it with `npm test`, and see code coverage analysis with `npm run test-with-coverage`.  
+1. Enjoy!
+
+## Understanding how to set up an npm / node app
+Should you desire to understand how to set up this application from scratch using npm's dependency management capabilities
+- [Read the project setup instructions](docs/project_setup.md)
+
 ## Set up Digital Ocean Ubuntu Droplet to run Node.js applications
 The following instructions are compiled from:
 - https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-18-04
-
-## How to run or set up the code locally
-If you are interested in running this code locally on your own machine, or are interested in a full list of commands to set up the node / npm project...
-- Read the setup documentation: [[docs/project_setup.md]]
 
 ## Setting up a Virtual Machine deployment environment on Digital Ocean
 Assuming you have instantiated a Digital Ocean Ubuntu Droplet, first log in to remote Digital Ocean Droplet via SSH, then...
