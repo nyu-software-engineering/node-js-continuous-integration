@@ -9,7 +9,8 @@ The following tools are used:
 - ESLint - for Javascript syntax and style checking
 - Mocha - unit testing
 - Babel - transpiling of written Javascript from ES6 to ES5 syntax
-- Nodemon - auo-restart the node app every time the code changes
+- Nodemon - auto-restart the node app every time the code changes in dev mode
+- PM2 - manage node processes in deployment
 - Travis CI - for continuous integration
 - GitHub webhooks - for for continuous delivery/deployment
 - Digital Ocean Droplet - deployment target hosting provider
