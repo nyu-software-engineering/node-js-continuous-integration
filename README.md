@@ -1,9 +1,14 @@
 [![Build Status](https://travis-ci.com/bloombar/node-js-travis-continuous-integration.svg?branch=master)](https://travis-ci.com/bloombar/node-js-travis-continuous-integration)
 
-Setting up continuous deployment using:
+##Introduction
+This project is set up to demonstrate the concepts of unit testing, continuous integration, continuous delivery, and continuous deployment. Furthermore, the application itself demonstrates the syntax and settings of Javascript, in particular, one written using Node.js and ES6 Javascript syntax.
+
+The following tools are used:
 - Git - for version control
 - Node.js - for application code
 - Mocha - unit testing
+- Babel - transpiling of written Javascript from ES6 to ES5 syntax
+- Nodemon - auo-restart the node app every time the code changes
 - Travis CI - for continuous integration
 - GitHub webhooks - for for continuous delivery/deployment
 - Digital Ocean Droplet - deployment target hosting provider
@@ -12,7 +17,12 @@ Setting up continuous deployment using:
 The following instructions are compiled from:
 - https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-18-04
 
-First log in to remote droplet via SSH, then...
+## How to run or set up the code locally
+If you are interested in running this code locally on your own machine, or are interested in a full list of commands to set up the node / npm project...
+- Read the setup documentation: [[docs/project_setup.md]]
+
+## Setting up a Virtual Machine deployment environment on Digital Ocean
+Assuming you have instantiated a Digital Ocean Ubuntu Droplet, first log in to remote Digital Ocean Droplet via SSH, then...
 
 ## UFW - ubuntu wirewall
 
