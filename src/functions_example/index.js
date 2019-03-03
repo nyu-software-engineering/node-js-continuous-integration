@@ -111,3 +111,6 @@ bun2(['foo', 'bar', 'baz', 'bun']); // passing an array to the function with mor
 console.log(buw1(2, 3));
 console.log(buw2(2, 3));
 console.log(buw3(2, 3));
+
+// export these so we can test them
+export {baz1, baz2, buw1, buw2, buw3};
