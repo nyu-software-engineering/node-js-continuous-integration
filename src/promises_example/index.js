@@ -8,30 +8,30 @@
 const iPromiseToLoveYou = new Promise((resolve, reject) => {
   // promise to have a 50% chance of being in love (replace this with whatever you are promising to do
   // you will usually do something asynchronous here, like fetch data from a web API, database, wait for a user to click something, etc.
-  let promiseFulfilled = Math.random() * 100 <= 50
+  const promiseFulfilled = Math.random() * 100 <= 50;
 
   // if the promise has been fulfilled (resolved)...
   if (promiseFulfilled) {
     // call the resolve method if the promise is fulfilled (resolved)
-    resolve('I finally realized I really love you!')
+    resolve('I finally realized I really love you!');
   }
 
   // if the promise was not fulfilled, we call the reject method and pass it an error object
   // this would normally crash the program, but we catch this error in code below
-  reject(new Error("I'm sorry, but I finally realized I do not love you!"))
-})
+  reject(new Error("I'm sorry, but I finally realized I do not love you!"));
+});
 
 // define the functions that are executed when the promise is resolved or rejected
-const onResolved = (resolvedValue) => console.log(resolvedValue)
-const onRejected = (error) => console.log(error)
+const onResolved = resolvedValue => console.log(resolvedValue);
+const onRejected = error => console.log(error);
 
 // run the promise code and pass it the functions to run when resolving or rejecting the promise
-iPromiseToLoveYou.then(onResolved, onRejected)
+iPromiseToLoveYou.then(onResolved, onRejected);
 
 // catch the error if the promise is rejected
 iPromiseToLoveYou.catch(
   (error) => {
-    console.log('Catching error')
-    console.log(error.message)
-  }
-)
+    console.log('Catching error');
+    console.log(error.message);
+  },
+);

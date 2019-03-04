@@ -15,7 +15,7 @@ Install the ESLint code linter for Javascript globally, and include it as a deve
 npm install eslint --save-dev
 ```
 
-Initialize the code linter... this will auto-create an ESLint settings file called `.eslintrc.json`.  Running this init command will ask several questions about what kind of checks you want the linter to do.  I've selected it to enforce syntax and style, to worry only about Node code, to use the "standard" lint style guide, and to keep the configuration file in json format.
+Initialize the code linter... this will auto-create an ESLint settings file called `.eslintrc.json`.  Running this init command will ask several questions about what kind of checks you want the linter to do.  I've selected it to enforce syntax and style, to worry only about Node code, to use the "airbnb" lint style guide, and to keep the configuration file in json format.
 ```bash
 ./node_modules/.bin/eslint --init
 ```
