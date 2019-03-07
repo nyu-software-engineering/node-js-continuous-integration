@@ -1,5 +1,7 @@
-## How this application was created
-The following is an outline of the commands that were run to set up the application code of this project using the npm / node.js environment.  These commands were used to generate the package.json configuration file with the proper settings, as well as to install dependencies for unit testing and process monitoring, and to create directories where application and testing code will live.
+## How this application code was created
+The following is an outline of the commands that were run to set up the application code of this project using the npm / node.js environment.  For those new to using frameworks, package managers, and the like, it is important to realize that this application depends upon a large body of code not written by us.
+
+The commands below were used to generate the package.json configuration file with the proper settings, as well as to install dependencies for unit testing and process monitoring, and to create directories where application and testing code will live.
 
 ## Create initial package.json configuration file
 Initialize an npm project in the current directory.  This creates a generic package.json file.  And create a src directory where our app code will live.
