@@ -2,6 +2,7 @@
  * A set of examples intended to teach promises in ES6 Javascript to programmers of other languages.
  * Promises are a pattern that simplifies asynchronous programming by making the code look like synchronous 'regular' code.
  * A Promise is an object that is used as a placeholder for the eventual results of a deferred (and possibly asynchronous) computation.
+ * This is quite a complicated idea.... so perhaps worth expanding!...
  */
 
 // create a new promise by making a Promise object that accepts two arguments - a method to call if the promise is resolved (fulfilled), and another to call if the promise is not fulfilled (rejected)
