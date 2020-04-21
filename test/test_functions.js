@@ -49,7 +49,7 @@ describe('Functions example tests', () => {
   // write a message what the test should show
   it('3 + 1 should be 4', () => {
     // insert your test case code here
-    assert.equal('baz2! The sum of 3 and 1 is 10.', baz2(3, 1))
+    assert.equal('baz2! The sum of 3 and 1 is 4.', baz2(3, 1))
   })
 
   // write a message what the test should show
