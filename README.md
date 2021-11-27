@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.com/bloombar/node-js-travis-continuous-integration.svg?branch=master)](https://travis-ci.com/bloombar/node-js-travis-continuous-integration)
+[![CircleCI](https://circleci.com/gh/nyu-software-engineering/node-js-travis-continuous-integration/tree/master.svg?style=svg)](https://circleci.com/gh/nyu-software-engineering/node-js-travis-continuous-integration/tree/master)
 
 ## Introduction
 
@@ -13,7 +14,8 @@ The following tools are used:
 - Babel - transpiling of written Javascript from ES6 to ES5 syntax
 - Nodemon - auto-restart the node app every time the code changes in dev mode
 - PM2 - manage node processes in deployment
-- Travis CI - for continuous integration
+- Travis CI - for continuous integration (we use both Travis CI and Circle CI just to provide an example of each)
+- Circle CI - for continuous integration (we use both Travis CI and Circle CI just to provide an example of each)
 - GitHub webhooks - for for continuous delivery/deployment
 - Digital Ocean Droplet - deployment target hosting provider
 
